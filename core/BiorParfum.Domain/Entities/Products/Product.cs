@@ -16,5 +16,11 @@ namespace BiorParfum.Domain.Entities.Products
         public double Price { get; set; }
         public int CategoryId { get; set; }
         public Category Category { get; set; }
+        public ICollection<CardItem> CardItem { get; set; }
+        public ICollection<Review> Review { get;}
+        public ICollection<ProductOrder> ProductOrder { get; set; }
+        public ICollection<Image> Image { get; set; }
+
+
     }
 }

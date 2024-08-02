@@ -1,6 +1,7 @@
 ﻿using BiorParfum.Domain.Entities.Products;
 using BiorParfum.Persistance.DbConfiguration.Common;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore.Storage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,9 +27,13 @@ namespace BiorParfum.Persistance.DbConfiguration.Products
                 .HasOne(x => x.Category)
                 .WithMany(x => x.Products)
                 .HasForeignKey(x => x.CategoryId);
+           builder.HasMany(x=>x.ProductOrder)
+                .WithOne(x=>x.Product)
+                .HasForeignKey(x => x.ProductId);
+            
 
 
-            base.Configure(builder);
+
 
 
         }
