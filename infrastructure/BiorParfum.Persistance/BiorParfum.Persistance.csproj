@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\core\BiorParfum.Application\BiorParfum.Application.csproj" />
     <ProjectReference Include="..\..\core\BiorParfum.Domain\BiorParfum.Domain.csproj" />
   </ItemGroup>
 

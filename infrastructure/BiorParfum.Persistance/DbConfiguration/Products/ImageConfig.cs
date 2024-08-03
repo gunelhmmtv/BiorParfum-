@@ -22,10 +22,12 @@ namespace BiorParfum.Persistance.DbConfiguration.Products
                 .HasMaxLength(100);
             builder.HasOne(x => x.Product)
                 .WithMany(x => x.Image)
-                .HasForeignKey(x => x.ProductId);
+                .HasForeignKey(x => x.ProductId)
+                .IsRequired(false);
             builder.HasOne(x => x.User)
                 .WithMany(x => x.Image)
-                .HasForeignKey(x => x.UserId);
+                .HasForeignKey(x => x.UserId)
+                .IsRequired(false);
         }
     }
 }

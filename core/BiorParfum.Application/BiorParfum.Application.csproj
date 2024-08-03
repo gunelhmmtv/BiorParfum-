@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BiorParfum.Domain\BiorParfum.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

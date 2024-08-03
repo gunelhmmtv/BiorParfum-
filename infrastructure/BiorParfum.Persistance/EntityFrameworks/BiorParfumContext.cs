@@ -17,10 +17,10 @@ namespace BiorParfum.Persistance.EntityFrameworks
         {
             
         }
-        public DbSet<User>  Users => this.Set<User>();
+        public DbSet<User> Users => this.Set<User>();
         public DbSet<Role> Roles => this.Set<Role>();
-        public DbSet<UserDetail> UserDetails=>  this.Set<UserDetail>();
-        public DbSet<UserRole> UserRoles=>  this.Set<UserRole>();
+        public DbSet<UserDetail> UserDetails => this.Set<UserDetail>();
+        public DbSet<UserRole> UserRoles => this.Set<UserRole>();
         public DbSet<Product> Products => this.Set<Product>();
         public DbSet<Category> Categories => this.Set<Category>();
         public DbSet<Address> Addresss => this.Set<Address>();
