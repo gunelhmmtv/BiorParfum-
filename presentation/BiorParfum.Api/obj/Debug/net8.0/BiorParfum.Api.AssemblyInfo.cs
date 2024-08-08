@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BiorParfum.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0d9bb92c03c3e8368990108f27da87f500038b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07f396a579178131ab88de5c5c7698ce27d0b2e7")]
 [assembly: System.Reflection.AssemblyProductAttribute("BiorParfum.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BiorParfum.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

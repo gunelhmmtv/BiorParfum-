@@ -10,7 +10,7 @@ namespace BiorParfum.Application.Interfaces
 {
     public interface IRepository<T> where T : BaseEntity
     {
-        Task<List<T>> GetAllAsync(bool tracking = true);
+        Task<IEnumerable<T>> GetAllAsync(bool tracking = true);
         Task<T> GetByIdAsync(int id);
         Task<bool> AddAsync(T entity);
         bool Update(T entity);
