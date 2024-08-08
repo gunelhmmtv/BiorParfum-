@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BiorParfum.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07f396a579178131ab88de5c5c7698ce27d0b2e7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40c92865b19e226733c816cb185d7ff0a8cd8ef9")]
 [assembly: System.Reflection.AssemblyProductAttribute("BiorParfum.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BiorParfum.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
