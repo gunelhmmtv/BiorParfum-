@@ -1,0 +1,12 @@
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\core\BiorParfum.Domain\bin\Debug\net8.0\BiorParfum.Domain.deps.json
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\core\BiorParfum.Domain\bin\Debug\net8.0\BiorParfum.Domain.dll
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\core\BiorParfum.Domain\bin\Debug\net8.0\BiorParfum.Domain.pdb
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\core\BiorParfum.Domain\obj\Debug\net8.0\BiorParfum.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\core\BiorParfum.Domain\obj\Debug\net8.0\BiorParfum.Domain.AssemblyInfoInputs.cache
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\core\BiorParfum.Domain\obj\Debug\net8.0\BiorParfum.Domain.AssemblyInfo.cs
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\core\BiorParfum.Domain\obj\Debug\net8.0\BiorParfum.Domain.csproj.CoreCompileInputs.cache
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\core\BiorParfum.Domain\obj\Debug\net8.0\BiorParfum.Domain.sourcelink.json
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\core\BiorParfum.Domain\obj\Debug\net8.0\BiorParfum.Domain.dll
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\core\BiorParfum.Domain\obj\Debug\net8.0\refint\BiorParfum.Domain.dll
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\core\BiorParfum.Domain\obj\Debug\net8.0\BiorParfum.Domain.pdb
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\core\BiorParfum.Domain\obj\Debug\net8.0\ref\BiorParfum.Domain.dll

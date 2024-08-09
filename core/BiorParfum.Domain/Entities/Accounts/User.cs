@@ -17,6 +17,7 @@ namespace BiorParfum.Domain.Entities.Accounts
         public UserDetail? UserDetail { get; set; }
         public ICollection<Review> Review { get; set; }
         public ICollection<Image> Image { get; set; }
+        public Customer Customer { get; set; }
        
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BiorParfum.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0d9bb92c03c3e8368990108f27da87f500038b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8020c9bb4bb7ee2a427065e8088053ff1af4a29a")]
 [assembly: System.Reflection.AssemblyProductAttribute("BiorParfum.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BiorParfum.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

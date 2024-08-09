@@ -27,5 +27,6 @@ namespace BiorParfum.Application.Interfaces
         IReviewRepository ReviewRepository { get; }
         IUserRepository UsersRepository { get; }
         IRoleRepository RoleRepository { get; }
+        IUserRoleRepository UserRoleRepository { get; }
     }
 }

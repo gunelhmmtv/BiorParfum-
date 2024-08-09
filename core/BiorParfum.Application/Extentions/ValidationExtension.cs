@@ -1,4 +1,5 @@
-﻿using FluentValidation;
+﻿using BiorParfum.Application.Exception;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,8 +20,9 @@ namespace BiorParfum.Application.Extentions
             var validationResult = await validator.ValidateAsync(instance);
             if (!validationResult.IsValid)
             {
-                throw new JobSearchValidationException(validationResult.Errors);
+                throw new BiorParfumValidationException(validationResult.Errors.ToList());
             }
         }
+
     }
 }

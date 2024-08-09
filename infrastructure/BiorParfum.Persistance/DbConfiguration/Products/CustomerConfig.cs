@@ -23,6 +23,10 @@ namespace BiorParfum.Persistance.DbConfiguration.Products
             builder.Property(x=>x.PhoneNumber) 
                 .IsRequired()
                 .HasMaxLength(50);
+            builder
+             .HasOne(z => z.User)
+             .WithOne(z => z.Customer)
+             .HasForeignKey<Customer>(z => z.UserId);
         }
     }
 }

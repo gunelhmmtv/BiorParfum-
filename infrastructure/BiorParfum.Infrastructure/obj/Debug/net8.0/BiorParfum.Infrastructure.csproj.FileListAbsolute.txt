@@ -1,0 +1,12 @@
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\infrastructure\BiorParfum.Infrastructure\bin\Debug\net8.0\BiorParfum.Infrastructure.deps.json
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\infrastructure\BiorParfum.Infrastructure\bin\Debug\net8.0\BiorParfum.Infrastructure.dll
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\infrastructure\BiorParfum.Infrastructure\bin\Debug\net8.0\BiorParfum.Infrastructure.pdb
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\infrastructure\BiorParfum.Infrastructure\obj\Debug\net8.0\BiorParfum.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\infrastructure\BiorParfum.Infrastructure\obj\Debug\net8.0\BiorParfum.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\infrastructure\BiorParfum.Infrastructure\obj\Debug\net8.0\BiorParfum.Infrastructure.AssemblyInfo.cs
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\infrastructure\BiorParfum.Infrastructure\obj\Debug\net8.0\BiorParfum.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\infrastructure\BiorParfum.Infrastructure\obj\Debug\net8.0\BiorParfum.Infrastructure.sourcelink.json
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\infrastructure\BiorParfum.Infrastructure\obj\Debug\net8.0\BiorParfum.Infrastructure.dll
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\infrastructure\BiorParfum.Infrastructure\obj\Debug\net8.0\refint\BiorParfum.Infrastructure.dll
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\infrastructure\BiorParfum.Infrastructure\obj\Debug\net8.0\BiorParfum.Infrastructure.pdb
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\infrastructure\BiorParfum.Infrastructure\obj\Debug\net8.0\ref\BiorParfum.Infrastructure.dll

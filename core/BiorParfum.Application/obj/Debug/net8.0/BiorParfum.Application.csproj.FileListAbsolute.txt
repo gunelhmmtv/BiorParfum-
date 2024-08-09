@@ -1,0 +1,6 @@
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\core\BiorParfum.Application\obj\Debug\net8.0\BiorParfum.Application.csproj.AssemblyReference.cache
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\core\BiorParfum.Application\obj\Debug\net8.0\BiorParfum.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\core\BiorParfum.Application\obj\Debug\net8.0\BiorParfum.Application.AssemblyInfoInputs.cache
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\core\BiorParfum.Application\obj\Debug\net8.0\BiorParfum.Application.AssemblyInfo.cs
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\core\BiorParfum.Application\obj\Debug\net8.0\BiorParfum.Application.csproj.CoreCompileInputs.cache
+C:\Users\gunel\Desktop\Gmentor\BiorParfum\core\BiorParfum.Application\obj\Debug\net8.0\BiorParfum.Application.sourcelink.json

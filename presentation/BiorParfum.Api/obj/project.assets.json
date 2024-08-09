@@ -1680,7 +1680,9 @@
           "AutoMapper": "13.0.1",
           "BiorParfum.Domain": "1.0.0",
           "FluentValidation.ValidatorAttribute": "8.6.1",
-          "MediatR": "12.4.0"
+          "MediatR": "12.4.0",
+          "Microsoft.EntityFrameworkCore": "8.0.7",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7"
         },
         "compile": {
           "bin/placeholder/BiorParfum.Application.dll": {}

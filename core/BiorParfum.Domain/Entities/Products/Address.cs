@@ -13,5 +13,6 @@ namespace BiorParfum.Domain.Entities.Products
         public string Street { get; set; }
         public int CountryId { get; set; }
         public Country Country { get; set; }
+        public ICollection<Customer> Customer { get; set; }
     }
 }

@@ -31,7 +31,6 @@ namespace BiorParfum.Persistance.EntityFrameworks
         public DbSet<Order> Orders => this.Set<Order>();
         public DbSet<Review> Reviews => this.Set<Review>();
         public DbSet<ProductOrder> ProductOrders => this.Set<ProductOrder>();
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder
