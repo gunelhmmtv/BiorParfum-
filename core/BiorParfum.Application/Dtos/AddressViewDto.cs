@@ -13,6 +13,6 @@ namespace BiorParfum.Application.Dtos
         public int Id { get; set; }
         public string CityName { get; set; }
         public string Street { get; set; }
-        public int CountryId { get; set; }
+        public string Country { get; set; }
     }
 }

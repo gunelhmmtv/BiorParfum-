@@ -21,12 +21,9 @@ namespace BiorParfum.Persistance.DbConfiguration.Products
             builder.Property(a => a.Street)
             .IsRequired()
             .HasMaxLength(200);
-            builder.HasOne(a => a.Country)
-            .WithOne(c => c.Address)
-            .HasForeignKey<Address>(a => a.CountryId);
-            builder.HasMany(x=>x.Customer)
-                .WithOne(x=> x.Address)
-                .HasForeignKey(x => x.AddressId);
+            builder.Property(a => a.Country)
+            .IsRequired()
+            .HasMaxLength(200);
 
 
         }

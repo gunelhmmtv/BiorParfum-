@@ -12,6 +12,7 @@ namespace BiorParfum.Application.Interfaces
     {
         Task AddAsync(Role role);
         Task<List<Role?>> GetRoles();
+        Task<Role> GetRoleById(int id);
         bool UpdateAsync(Role role);
         bool DeleteAsync(Role role);
         Task<IEnumerable<Role>> GetAllAsync();

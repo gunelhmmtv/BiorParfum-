@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BiorParfum.Persistance.EntityFrameworks.Repositories
 {
-    public class EfProductRepository: EfGenericRepository<Product>, IProductRepository
+    public class EfProductRepository : EfGenericRepository<Product>, IProductRepository
     {
         public EfProductRepository(BiorParfumContext context) : base(context) 
         { 

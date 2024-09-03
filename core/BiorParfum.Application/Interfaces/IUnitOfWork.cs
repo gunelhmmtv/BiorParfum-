@@ -20,7 +20,6 @@ namespace BiorParfum.Application.Interfaces
         IAddressRepository AddressRepository { get; }
 
         ICardItemRepository CardItemRepository { get; }
-        ICountryRepository CountryRepository { get; }
         ICustomerRepository CustomerRepository { get; }
         IImageRepository ImageRepository { get; }
         IOrderRepository OrderRepository { get; }

@@ -9,10 +9,14 @@ namespace BiorParfum.Domain.Entities.Products
 {
     public class Address : BaseEntity
     {
+        public Address()
+        { 
+            Customer = new HashSet<Customer>();
+        }
+
         public string CityName { get; set; }
         public string Street { get; set; }
-        public int CountryId { get; set; }
-        public Country Country { get; set; }
+        public string Country { get; set; }
         public ICollection<Customer> Customer { get; set; }
     }
 }

@@ -14,7 +14,7 @@ namespace BiorParfum.Api.Data
 
             var builder = new DbContextOptionsBuilder<BiorParfumContext>();
             var connectionString = configuration.GetConnectionString("local");
-            builder.UseSqlServer(connectionString, b => b.MigrationsAssembly("BarrenSellTicket.WebApi"));
+            builder.UseSqlServer(connectionString, b => b.MigrationsAssembly("BiorParfum.Persistance"));
 
             return new BiorParfumContext(builder.Options);
         }

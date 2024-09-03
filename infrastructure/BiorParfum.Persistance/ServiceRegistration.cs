@@ -21,6 +21,8 @@ namespace BiorParfum.Persistance
                 .AddDbContext<BiorParfumContext>(options => options
                 .UseSqlServer(connectionString)
                 .AddInterceptors(new UpdateBaseEntityInterceptor()));
+
+            services.AddHttpContextAccessor();
            
                   
         }

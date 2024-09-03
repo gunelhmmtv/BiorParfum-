@@ -22,7 +22,24 @@ namespace BiorParfum.Application.Features.Queries
         public async  Task<IEnumerable<CategoryViewDto>> Handle(GetAllCategoryQuery request, CancellationToken cancellationToken)
         {
             var categories = await _uow.CategoryRepository.GetAllAsync();
-            return _mapper.Map<IEnumerable<CategoryViewDto>>(categories);
+
+            if (categories is null)
+            {
+                throw new NullReferenceException("Category is null");
+
+            }
+
+            var categoriesDto= new List<CategoryViewDto>();
+
+            foreach (var category in categories)
+            {
+                var categoryDto = new CategoryViewDto
+                {
+                    Value = category.Value,
+                };
+                categoriesDto.Add(categoryDto);
+            }
+            return categoriesDto;
         }
     }
 }

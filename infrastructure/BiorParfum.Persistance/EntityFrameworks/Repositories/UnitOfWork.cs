@@ -1,11 +1,15 @@
 ﻿using BiorParfum.Application.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using BiorParfum.Domain.Entities.Common;
 
 namespace BiorParfum.Persistance.EntityFrameworks.Repositories
 {
@@ -13,12 +17,14 @@ namespace BiorParfum.Persistance.EntityFrameworks.Repositories
     {
         private readonly BiorParfumContext _context;
         private readonly Dictionary<Type, object> _repositories;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public UnitOfWork(BiorParfumContext context)
+        public UnitOfWork(BiorParfumContext context, IHttpContextAccessor httpContextAccessor)
         {
             _repositories = new Dictionary<Type, object>();
             _context = context;
             _context.Database.BeginTransactionAsync();
+            _httpContextAccessor = httpContextAccessor;
 
         }
 
@@ -30,9 +36,6 @@ namespace BiorParfum.Persistance.EntityFrameworks.Repositories
 
         public IAddressRepository AddressRepository => SetRepository<IAddressRepository>();
 
-        public IProductRepository CardItemRepository => SetRepository<IProductRepository>();
-
-        public ICountryRepository CountryRepository => SetRepository<ICountryRepository>();
 
         public ICustomerRepository CustomerRepository =>SetRepository<ICustomerRepository>();
 
@@ -44,12 +47,38 @@ namespace BiorParfum.Persistance.EntityFrameworks.Repositories
 
         public IUserRepository UsersRepository => SetRepository<IUserRepository>();
 
+        public IRoleRepository RoleRepository => SetRepository<IRoleRepository>();
+        public IUserRoleRepository UserRoleRepository => SetRepository<IUserRoleRepository>();
+        public ICardItemRepository CardItemRepository => SetRepository<ICardItemRepository>();
+
+
         public async Task Commit()
         {
+
+            var userId = _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            IEnumerable<EntityEntry<BaseEntity>> entities = _context
+              .ChangeTracker
+              .Entries<BaseEntity>()
+              .ToList();
+
+            foreach (var entry in entities)
+            {
+                if (entry.State == EntityState.Added)
+                {
+                    entry.Entity.CreatedId = Convert.ToInt32(userId);
+
+                }
+
+                if (entry.State == EntityState.Modified)
+                {
+                    entry.Entity.UpdatedId = Convert.ToInt32(userId);
+                }
+            }
+
             await _context.SaveChangesAsync();
             await _context.Database.CommitTransactionAsync();
         }
-
         public TRepository GetRepository<TRepository>() where TRepository : class
         {
             throw new NotImplementedException();

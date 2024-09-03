@@ -14,12 +14,12 @@ namespace BiorParfum.Persistance.DbConfiguration.Products
         public void Configure(EntityTypeBuilder<Image> builder)
         {
             base.Configure(builder);
-            builder.Property(x => x.Url)
-                .IsRequired()
-                .HasMaxLength(100);
-            builder.Property(x=>x.ContentType) 
-                .IsRequired()
-                .HasMaxLength(100);
+            //builder.Property(x => x.Url)
+            //    .IsRequired()
+            //    .HasMaxLength(100);
+            //builder.Property(x=>x.ContentType) 
+            //    .IsRequired()
+            //    .HasMaxLength(100);
             builder.HasOne(x => x.Product)
                 .WithMany(x => x.Image)
                 .HasForeignKey(x => x.ProductId)

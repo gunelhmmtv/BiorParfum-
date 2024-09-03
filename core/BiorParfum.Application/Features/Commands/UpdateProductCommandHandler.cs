@@ -29,6 +29,7 @@ namespace BiorParfum.Application.Features.Commands
 
             var productDetail = _mapper.Map<Product>(request);
             var editedProductDetail = await _uow.ProductRepository.GetByIdAsync(request.Id);
+           
 
             editedProductDetail.ProductName= request.ProductName;
             editedProductDetail.Description= request.Description;

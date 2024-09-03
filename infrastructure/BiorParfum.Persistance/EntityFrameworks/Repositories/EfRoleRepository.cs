@@ -21,7 +21,10 @@ namespace BiorParfum.Persistance.EntityFrameworks.Repositories
         {
             await _context.Roles.AddAsync(role);
         }
-
+        public async Task<Role> GetRoleById(int id)
+        {
+            return await _context.Set<Role>().FindAsync(id);
+        }
         public bool DeleteAsync(Role role)
         {
             var removed = _context.Set<Role>().Remove(role);

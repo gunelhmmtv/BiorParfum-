@@ -25,7 +25,6 @@ namespace BiorParfum.Persistance.EntityFrameworks
         public DbSet<Category> Categories => this.Set<Category>();
         public DbSet<Address> Addresss => this.Set<Address>();
         public DbSet<CardItem> CardItems => this.Set<CardItem>();
-        public DbSet<Country> Countries => this.Set<Country>();
         public DbSet<Customer> Customers => this.Set<Customer>();
         public DbSet<Image> Images => this.Set<Image>();
         public DbSet<Order> Orders => this.Set<Order>();

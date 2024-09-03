@@ -53,6 +53,11 @@ namespace BiorParfum.Persistance.EntityFrameworks.Repositories
             var updated = Table.Update(entity);
             return updated.State == EntityState.Modified;
         }
+
+        Task<IEnumerable<T>> IRepository<T>.GetAllAsync(bool tracking)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }
